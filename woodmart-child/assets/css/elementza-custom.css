@@ -1,0 +1,677 @@
+/* Elementza Custom Styles for WoodMart Child Theme */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Montserrat:wght@400;600;700&display=swap');
+
+/* Custom CSS Variables */
+:root {
+    --elementza-primary: #0e96f7;
+    --elementza-secondary: #007acc;
+    --elementza-gradient-start: #667eea;
+    --elementza-gradient-end: #764ba2;
+    --elementza-text: #333333;
+    --elementza-light: #666666;
+    --elementza-white: #ffffff;
+    --elementza-dark: #1a1a1a;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Archivo', 'Montserrat', sans-serif;
+    direction: rtl;
+}
+
+/* Header Customization */
+.whb-header {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.whb-header .whb-main-header {
+    padding: 15px 0;
+}
+
+/* Logo */
+.whb-header .whb-logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation */
+.whb-header .whb-navigation .menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.whb-header .whb-navigation .menu li a {
+    color: var(--elementza-text);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.whb-header .whb-navigation .menu li a:hover {
+    color: var(--elementza-primary);
+    background: rgba(14, 150, 247, 0.1);
+}
+
+/* Header Actions */
+.whb-header .whb-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.whb-header .whb-actions .whb-element {
+    margin: 0;
+}
+
+/* Login Button */
+.whb-header .whb-login-btn {
+    color: var(--elementza-text);
+    font-weight: 500;
+    padding: 8px 20px;
+    border: 2px solid var(--elementza-primary);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whb-header .whb-login-btn:hover {
+    background: var(--elementza-primary);
+    color: var(--elementza-white);
+}
+
+/* Cart Icon */
+.whb-header .whb-cart-icon {
+    position: relative;
+    color: var(--elementza-text);
+    font-size: 18px;
+}
+
+.whb-header .whb-cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--elementza-primary);
+    color: var(--elementza-white);
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Hero Section */
+.elementza-hero {
+    background: linear-gradient(135deg, var(--elementza-gradient-start) 0%, var(--elementza-gradient-end) 100%);
+    color: var(--elementza-white);
+    padding: 120px 0 80px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.elementza-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.elementza-hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.elementza-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.elementza-btn-primary {
+    display: inline-block;
+    background: var(--elementza-primary);
+    color: var(--elementza-white);
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.elementza-btn-primary:hover {
+    background: var(--elementza-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(14, 150, 247, 0.4);
+}
+
+.elementza-btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--elementza-primary);
+    text-decoration: none;
+    padding: 12px 30px;
+    border: 2px solid var(--elementza-primary);
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.elementza-btn-secondary:hover {
+    background: var(--elementza-primary);
+    color: var(--elementza-white);
+}
+
+/* Trial Section */
+.elementza-trial {
+    background: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.elementza-trial h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--elementza-text);
+}
+
+.elementza-trial p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: var(--elementza-light);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elementza-trial-form {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.elementza-trial-form input {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.elementza-trial-form input:focus {
+    outline: none;
+    border-color: var(--elementza-primary);
+}
+
+/* Courses Section */
+.elementza-courses {
+    padding: 80px 0;
+    background: var(--elementza-white);
+}
+
+.elementza-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.elementza-section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--elementza-text);
+}
+
+.elementza-section-header p {
+    font-size: 1.2rem;
+    color: var(--elementza-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.elementza-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.elementza-course-card {
+    background: var(--elementza-white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elementza-course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.elementza-course-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.elementza-course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.elementza-course-card:hover .elementza-course-image img {
+    transform: scale(1.05);
+}
+
+.elementza-course-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.elementza-course-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--elementza-text);
+}
+
+.elementza-course-level {
+    color: var(--elementza-light);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.elementza-course-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--elementza-primary);
+    margin-bottom: 25px;
+}
+
+/* Philosophy Section */
+.elementza-philosophy {
+    background: linear-gradient(135deg, var(--elementza-gradient-start) 0%, var(--elementza-gradient-end) 100%);
+    color: var(--elementza-white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.elementza-philosophy h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.elementza-philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.elementza-philosophy-item {
+    padding: 30px;
+}
+
+.elementza-philosophy-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--elementza-white);
+}
+
+.elementza-philosophy-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.elementza-philosophy-item p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Footer Customization */
+.whb-footer {
+    background: var(--elementza-dark);
+    color: var(--elementza-white);
+}
+
+.whb-footer .whb-footer-content {
+    padding: 60px 0 20px;
+}
+
+.whb-footer .whb-footer-logo img {
+    height: 60px;
+    width: auto;
+}
+
+.whb-footer .whb-footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.whb-footer .whb-footer-column h4 {
+    margin-bottom: 20px;
+    color: var(--elementza-primary);
+}
+
+.whb-footer .whb-footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.whb-footer .whb-footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.whb-footer .whb-footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.whb-footer .whb-footer-column ul li a:hover {
+    color: var(--elementza-primary);
+}
+
+.whb-footer .whb-footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .whb-header .whb-navigation .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .elementza-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .elementza-hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .elementza-trial-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .elementza-trial-form input {
+        min-width: 250px;
+    }
+    
+    .elementza-courses-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .elementza-philosophy-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .whb-footer .whb-footer-links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .elementza-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .elementza-section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .elementza-philosophy h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.elementza-course-card,
+.elementza-philosophy-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--elementza-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--elementza-secondary);
+}
+
+/* Focus Styles */
+button:focus,
+input:focus,
+a:focus {
+    outline: 2px solid var(--elementza-primary);
+    outline-offset: 2px;
+}
+
+/* Loading States */
+.elementza-btn-primary:disabled,
+.elementza-btn-secondary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Notification Styles */
+.elementza-notification {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    z-index: 10000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.elementza-notification.show {
+    transform: translateX(0);
+}
+
+/* Back to Top Button */
+.elementza-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: var(--elementza-primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(14, 150, 247, 0.3);
+}
+
+.elementza-back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.elementza-back-to-top:hover {
+    background: var(--elementza-secondary);
+    transform: translateY(-2px);
+}
+
+/* WooCommerce Customization */
+.woocommerce .elementza-course-card {
+    margin-bottom: 30px;
+}
+
+.woocommerce .elementza-course-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--elementza-primary);
+}
+
+.woocommerce .elementza-course-card .button {
+    background: var(--elementza-primary);
+    color: var(--elementza-white);
+    border-radius: 25px;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.woocommerce .elementza-course-card .button:hover {
+    background: var(--elementza-secondary);
+    transform: translateY(-2px);
+}
+
+/* Elementor Customization */
+.elementor .elementza-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.elementor .elementza-btn-primary {
+    display: inline-block;
+    background: var(--elementza-primary);
+    color: var(--elementza-white);
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.elementor .elementza-btn-primary:hover {
+    background: var(--elementza-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(14, 150, 247, 0.4);
+}
+
+/* Custom Post Type Styles */
+.courses .elementza-course-card {
+    margin-bottom: 30px;
+}
+
+.courses .elementza-course-content {
+    padding: 20px;
+}
+
+.courses .elementza-course-price {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Widget Styles */
+.widget .elementza-trial-form {
+    max-width: 100%;
+}
+
+.widget .elementza-trial-form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.widget .elementza-btn-primary {
+    width: 100%;
+    text-align: center;
+}
+
+/* Shortcode Styles */
+.elementza-courses-shortcode {
+    margin: 40px 0;
+}
+
+.elementza-courses-shortcode .elementza-course-card {
+    margin-bottom: 30px;
+}
+
+/* Admin Styles */
+.elementza-admin-header {
+    background: linear-gradient(135deg, var(--elementza-gradient-start) 0%, var(--elementza-gradient-end) 100%);
+    color: var(--elementza-white);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.elementza-admin-header h1 {
+    margin: 0;
+    color: var(--elementza-white);
+}
+
+/* Print Styles */
+@media print {
+    .elementza-hero {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .elementza-btn-primary,
+    .elementza-btn-secondary {
+        border: 1px solid black !important;
+        background: white !important;
+        color: black !important;
+    }
+}
